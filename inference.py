@@ -20,7 +20,7 @@ from jsonschema import validate
 load_dotenv()
 
 MODEL = "claude-sonnet-4-6"
-MAX_TOKENS = 1024
+MAX_TOKENS = 4096
 
 
 OUTPUT_SCHEMA = {
@@ -169,6 +169,9 @@ def triage(image_bytes: bytes, symptom_text: str) -> dict:
         ],
     )
 
+    if response.stop_reason == "max_tokens":
+        raise ValueError("Model output hit max_tokens before finishing the JSON. Try a shorter symptom description or a smaller image.")
+
     text = response.content[0].text
     result = _extract_json(text)
     validate(instance=result, schema=OUTPUT_SCHEMA)
@@ -187,6 +190,9 @@ def triage_text_only(symptom_text: str) -> dict:
             {"role": "user", "content": f"Patient description: {symptom_text}\n\nReturn the triage JSON."}
         ],
     )
+
+    if response.stop_reason == "max_tokens":
+        raise ValueError("Model output hit max_tokens before finishing the JSON.")
 
     result = _extract_json(response.content[0].text)
     validate(instance=result, schema=TEXT_ONLY_OUTPUT_SCHEMA)

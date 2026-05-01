@@ -36,7 +36,11 @@ run = st.button("Run triage", type="primary", disabled=not (img and text.strip()
 
 if run:
     with st.spinner("Calling model..."):
-        result = triage(img.read(), text)
+        try:
+            result = triage(img.read(), text)
+        except Exception as e:
+            st.error(str(e))
+            st.stop()
 
     st.divider()
 
