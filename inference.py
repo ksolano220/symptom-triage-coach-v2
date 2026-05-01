@@ -97,6 +97,36 @@ Ground findings in what's visible AND consistent with the description. If the im
 Return ONLY the JSON object. No prose before or after."""
 
 
+TEXT_ONLY_SYSTEM_PROMPT = """You are a pre-visit triage assistant. A patient describes a symptom in plain language. Your job is to help them prepare for their doctor's appointment, not diagnose.
+
+Return a JSON object with four fields:
+
+1. "systems": 1-5 body systems involved, lowercase. Choose from: cardiovascular, respiratory, gastrointestinal, neurological, musculoskeletal, dermatological, mental_health, endocrine, urological, reproductive, hematologic, immunologic, ophthalmologic, otolaryngologic.
+
+2. "possible_causes": 2-8 objects with {name, likelihood, description}. likelihood is one of: common, less_common, rare, serious.
+
+3. "red_flags": up to 6 strings, each a feature warranting immediate care.
+
+4. "questions_to_prepare_for": 2-6 questions the doctor will likely ask.
+
+Return ONLY the JSON object. No prose before or after."""
+
+
+TEXT_ONLY_OUTPUT_SCHEMA = {
+    "type": "object",
+    "required": [
+        "systems",
+        "possible_causes",
+        "red_flags",
+        "questions_to_prepare_for",
+    ],
+    "properties": {
+        k: v for k, v in OUTPUT_SCHEMA["properties"].items() if k != "visual_findings"
+    },
+    "additionalProperties": False,
+}
+
+
 _client = Anthropic()  # reads ANTHROPIC_API_KEY from env
 
 
@@ -142,6 +172,24 @@ def triage(image_bytes: bytes, symptom_text: str) -> dict:
     text = response.content[0].text
     result = _extract_json(text)
     validate(instance=result, schema=OUTPUT_SCHEMA)
+    return result
+
+
+def triage_text_only(symptom_text: str) -> dict:
+    if not symptom_text.strip():
+        raise ValueError("symptom_text is empty")
+
+    response = _client.messages.create(
+        model=MODEL,
+        max_tokens=MAX_TOKENS,
+        system=TEXT_ONLY_SYSTEM_PROMPT,
+        messages=[
+            {"role": "user", "content": f"Patient description: {symptom_text}\n\nReturn the triage JSON."}
+        ],
+    )
+
+    result = _extract_json(response.content[0].text)
+    validate(instance=result, schema=TEXT_ONLY_OUTPUT_SCHEMA)
     return result
 
 

@@ -1,0 +1,414 @@
+[
+  {
+    "id": "derm-consistent",
+    "case": {
+      "id": "derm-consistent",
+      "image": "cases/contact_dermatitis.jpg",
+      "symptom": "Itchy red rash on my forearm. Started two days ago after gardening without gloves.",
+      "expected_systems": [
+        "dermatological"
+      ],
+      "notes": "image and text agree"
+    },
+    "image_text": {
+      "visual_findings": [
+        "Diffuse erythematous macular and papular eruption across a large skin surface",
+        "Linear streaking pattern visible within the rash, suggestive of contact or drag pattern",
+        "Scattered discrete erythematous papules interspersed with confluent erythema",
+        "No visible vesicles, pustules, or frank urticaria wheal formations at this image resolution",
+        "Skin surface appears intact without visible erosions or crusting"
+      ],
+      "systems": [
+        "dermatological",
+        "immunologic"
+      ],
+      "possible_causes": [
+        {
+          "name": "Allergic Contact Dermatitis",
+          "likelihood": "common",
+          "description": "Delayed hypersensitivity reaction (Type IV) to plant allergens (e.g., poison ivy/oak/sumac) or other garden substances. The linear streaking pattern is highly characteristic of plant contact dermatitis."
+        },
+        {
+          "name": "Irritant Contact Dermatitis",
+          "likelihood": "common",
+          "description": "Direct skin irritation from plant sap, thorns, soil chemicals, or fertilizers encountered during gardening without glove protection."
+        },
+        {
+          "name": "Urticaria (Hives)",
+          "likelihood": "less_common",
+          "description": "Allergic reaction causing wheals and erythema; could be triggered by insect contact, plant exposure, or topical allergens during gardening."
+        },
+        {
+          "name": "Insect Bite/Sting Reaction",
+          "likelihood": "less_common",
+          "description": "Multiple insect bites (e.g., chiggers, caterpillar hair contact) during outdoor activity can produce diffuse papular pruritic eruptions."
+        },
+        {
+          "name": "Phytophotodermatitis",
+          "likelihood": "less_common",
+          "description": "Reaction from plant-derived furocoumarins (e.g., wild parsnip, hogweed) activated by UV exposure, producing erythema and potential blistering."
+        },
+        {
+          "name": "Tinea Corporis (Ringworm)",
+          "likelihood": "rare",
+          "description": "Fungal skin infection sometimes acquired via soil contact; typically presents with annular scaling plaques but early presentation can be erythematous."
+        },
+        {
+          "name": "Scabies",
+          "likelihood": "rare",
+          "description": "Mite infestation causing intensely pruritic papular rash; unlikely from gardening alone but possible with certain soil exposure."
+        }
+      ],
+      "red_flags": [
+        "Rash spreading rapidly to face, neck, or genitals",
+        "Development of difficulty breathing, throat tightness, or swelling of lips/tongue (anaphylaxis)",
+        "Involvement of eyes causing pain or vision changes",
+        "Appearance of large fluid-filled blisters (bullae) or skin sloughing",
+        "Fever, chills, or red streaks extending from the rash (possible infection/cellulitis)",
+        "Rash involving more than 30% of body surface area or spreading uncontrollably"
+      ],
+      "questions_to_prepare_for": [
+        "What specific plants or chemicals did you come into contact with while gardening?",
+        "Have you had a similar reaction before, or do you have known allergies to plants or latex?",
+        "Is the rash spreading beyond the initial area, and have you touched your face or eyes since exposure?",
+        "Have you used any topical treatments (creams, antihistamines) since the rash appeared, and did they help?",
+        "Did you notice any insect bites, stings, or skin trauma (scratches from thorns) during gardening?",
+        "Are you currently taking any medications, including new ones started recently?"
+      ]
+    },
+    "text_only": {
+      "systems": [
+        "dermatological",
+        "immunologic"
+      ],
+      "possible_causes": [
+        {
+          "name": "Contact Dermatitis (Irritant)",
+          "likelihood": "common",
+          "description": "Skin reaction caused by direct contact with an irritating plant, soil, fertilizer, or gardening chemical without protective gloves."
+        },
+        {
+          "name": "Allergic Contact Dermatitis",
+          "likelihood": "common",
+          "description": "Immune-mediated allergic reaction to a plant allergen (e.g., poison ivy, poison oak) or other substance encountered during gardening."
+        },
+        {
+          "name": "Poison Ivy / Oak / Sumac (Urushiol Reaction)",
+          "likelihood": "common",
+          "description": "Delayed hypersensitivity reaction to urushiol oil from toxic plants, typically appearing 12\u201372 hours after exposure with itchy, streaky red rash."
+        },
+        {
+          "name": "Insect or Mite Bite",
+          "likelihood": "common",
+          "description": "Bites from insects, chiggers, or mites common in garden environments can cause localized red, itchy welts or rash."
+        },
+        {
+          "name": "Fungal Skin Infection (Tinea)",
+          "likelihood": "less_common",
+          "description": "Fungal organisms in soil can infect skin, causing a red, itchy, sometimes ring-shaped rash on exposed areas."
+        },
+        {
+          "name": "Cellulitis",
+          "likelihood": "less_common",
+          "description": "Bacterial skin infection that can develop from small cuts or abrasions during gardening; presents as red, warm, swollen skin."
+        },
+        {
+          "name": "Sporotrichosis",
+          "likelihood": "rare",
+          "description": "Fungal infection caused by Sporothrix found in soil and plant matter; can cause nodular lesions following a scratch or puncture wound."
+        }
+      ],
+      "red_flags": [
+        "Rash spreading rapidly beyond the forearm",
+        "Skin becomes hot, swollen, or has red streaking (possible cellulitis or lymphangitis)",
+        "Fever, chills, or flu-like symptoms accompanying the rash",
+        "Difficulty breathing, throat tightening, or facial swelling (signs of severe allergic reaction)",
+        "Blistering or open sores covering large areas of skin",
+        "Rash involves the face, eyes, or genitals"
+      ],
+      "questions_to_prepare_for": [
+        "What plants, chemicals, or materials did you come into contact with while gardening?",
+        "Did you notice any scratches, puncture wounds, or insect bites at the time?",
+        "Is the rash spreading, staying the same, or improving since it started?",
+        "Do you have any known allergies to plants or other substances?",
+        "Have you tried any treatments so far (e.g., hydrocortisone cream, antihistamines)?",
+        "Do you have any fever or other symptoms beyond the rash?"
+      ]
+    }
+  },
+  {
+    "id": "derm-vague",
+    "case": {
+      "id": "derm-vague",
+      "image": "cases/contact_dermatitis.jpg",
+      "symptom": "Something is wrong with my arm. It looks bad.",
+      "expected_systems": [
+        "dermatological"
+      ],
+      "notes": "vague text, tests image grounding"
+    },
+    "image_text": {
+      "visual_findings": [
+        "Diffuse erythematous macular and papular eruption across a large body surface area",
+        "Irregular linear and streak-like erythematous patterns interspersed among discrete small papules",
+        "Background skin appears mildly flushed with scattered pinpoint red macules",
+        "No visible vesicles, bullae, pustules, or open erosions identified",
+        "No visible scaling, crusting, or purpuric/non-blanchable lesions discernible at this resolution"
+      ],
+      "systems": [
+        "dermatological",
+        "immunologic"
+      ],
+      "possible_causes": [
+        {
+          "name": "Urticaria (Hives)",
+          "likelihood": "common",
+          "description": "The linear, streak-like wheals mixed with scattered papules are highly characteristic of urticaria. Can be triggered by allergens, medications, foods, or infections."
+        },
+        {
+          "name": "Dermatographism",
+          "likelihood": "common",
+          "description": "The prominent linear marks may represent dermatographism (skin writing), where mechanical pressure causes exaggerated urticarial lines, often occurring alongside a broader reactive rash."
+        },
+        {
+          "name": "Allergic contact dermatitis",
+          "likelihood": "common",
+          "description": "A delayed hypersensitivity reaction to a substance (lotion, fabric, plant, latex) contacting the skin, producing erythema and papules."
+        },
+        {
+          "name": "Drug reaction / morbilliform exanthem",
+          "likelihood": "less_common",
+          "description": "A diffuse erythematous macular-papular rash can be a reaction to a newly started medication, often appearing 7\u201314 days after initiation."
+        },
+        {
+          "name": "Viral exanthem",
+          "likelihood": "less_common",
+          "description": "Many viral infections (e.g., EBV, enteroviruses) produce widespread maculopapular rashes, especially in younger patients."
+        },
+        {
+          "name": "Heat rash (Miliaria rubra)",
+          "likelihood": "less_common",
+          "description": "Blocked sweat ducts in hot or humid conditions can produce small erythematous papules over large areas."
+        },
+        {
+          "name": "Drug reaction with eosinophilia and systemic symptoms (DRESS)",
+          "likelihood": "rare",
+          "description": "A severe, potentially life-threatening drug hypersensitivity with widespread rash and systemic involvement. Rare but serious."
+        }
+      ],
+      "red_flags": [
+        "Difficulty breathing, throat tightness, or swallowing difficulty (signs of anaphylaxis \u2014 call 911 immediately)",
+        "Rapid spread of rash to face, lips, or tongue with swelling",
+        "High fever (>38.5\u00b0C / 101.3\u00b0F) accompanying the rash",
+        "Rash that does not blanch when pressed (possible purpura/petechiae \u2014 seek emergency care)",
+        "Mucous membrane involvement (mouth sores, eye redness, genital lesions)",
+        "Feeling faint, racing heart, or low blood pressure alongside the rash"
+      ],
+      "questions_to_prepare_for": [
+        "When did the rash first appear, and has it been spreading or changing in appearance?",
+        "Have you started any new medications, supplements, or vitamins in the past 2\u20134 weeks?",
+        "Have you been exposed to any new foods, soaps, lotions, plants, or fabrics recently?",
+        "Do you have any associated symptoms such as itching, burning, fever, joint pain, or fatigue?",
+        "Do you have any known allergies, and have you had a similar rash before?",
+        "Have you been ill recently or had any viral symptoms (sore throat, runny nose, fatigue)?"
+      ]
+    },
+    "text_only": {
+      "systems": [
+        "musculoskeletal",
+        "dermatological",
+        "cardiovascular",
+        "neurological"
+      ],
+      "possible_causes": [
+        {
+          "name": "Soft tissue injury or bruising",
+          "likelihood": "common",
+          "description": "Trauma to the arm can cause visible bruising, swelling, or discoloration from damaged blood vessels under the skin."
+        },
+        {
+          "name": "Fracture or broken bone",
+          "likelihood": "common",
+          "description": "A broken bone in the arm may cause visible deformity, swelling, bruising, and significant pain."
+        },
+        {
+          "name": "Skin infection or cellulitis",
+          "likelihood": "common",
+          "description": "A bacterial skin infection can cause redness, warmth, swelling, and visible changes in the appearance of the arm."
+        },
+        {
+          "name": "Allergic reaction or contact dermatitis",
+          "likelihood": "common",
+          "description": "Exposure to an allergen or irritant can cause rash, hives, redness, or swelling on the arm."
+        },
+        {
+          "name": "Deep vein thrombosis (DVT)",
+          "likelihood": "less_common",
+          "description": "A blood clot in a deep vein can cause swelling, redness, warmth, and visible changes to the arm."
+        },
+        {
+          "name": "Abscess or boil",
+          "likelihood": "less_common",
+          "description": "A localized collection of pus under the skin can cause a visible, painful lump with redness and swelling."
+        },
+        {
+          "name": "Necrotizing fasciitis",
+          "likelihood": "rare",
+          "description": "A severe, rapidly spreading bacterial infection of the soft tissue that can cause dramatic visible changes and requires emergency treatment."
+        },
+        {
+          "name": "Compartment syndrome",
+          "likelihood": "serious",
+          "description": "Dangerous buildup of pressure within muscle compartments, often after injury, causing severe pain, tightness, and visible swelling."
+        }
+      ],
+      "red_flags": [
+        "Rapidly spreading redness, swelling, or discoloration",
+        "Visible bone or severe deformity",
+        "Loss of sensation, movement, or circulation in the arm or hand",
+        "Skin that appears black, purple, or has a foul odor (possible tissue death)",
+        "Severe, worsening pain that is out of proportion to appearance",
+        "Fever, chills, or feeling generally very unwell alongside arm changes"
+      ],
+      "questions_to_prepare_for": [
+        "When did you first notice something was wrong with your arm, and has it changed since then?",
+        "Did you experience any injury, trauma, insect bite, or exposure to something new recently?",
+        "Can you describe exactly what it looks like \u2014 redness, swelling, bruising, rash, deformity?",
+        "Are you experiencing any pain, numbness, tingling, or weakness in the arm?",
+        "Do you have any fever, chills, or other symptoms elsewhere in your body?",
+        "Do you have any underlying medical conditions such as diabetes, a blood disorder, or a weakened immune system?"
+      ]
+    }
+  },
+  {
+    "id": "derm-conflict",
+    "case": {
+      "id": "derm-conflict",
+      "image": "cases/contact_dermatitis.jpg",
+      "symptom": "Crushing chest pain radiating down my left arm with shortness of breath for the last hour.",
+      "expected_systems": [
+        "dermatological",
+        "cardiovascular"
+      ],
+      "notes": "text describes cardiac emergency, image shows rash"
+    },
+    "image_text": {
+      "visual_findings": [
+        "Diffuse erythematous macular and papular rash across the trunk/back",
+        "Irregular linear erythematous streaks interspersed among discrete small papules",
+        "No visible wheals, vesicles, pustules, or scaling noted",
+        "Rash appears widespread and confluent in areas",
+        "No obvious petechiae or purpura visible at this image resolution"
+      ],
+      "systems": [
+        "cardiovascular",
+        "dermatological",
+        "respiratory"
+      ],
+      "possible_causes": [
+        {
+          "name": "Acute Myocardial Infarction (Heart Attack)",
+          "likelihood": "serious",
+          "description": "Crushing chest pain radiating to the left arm with shortness of breath lasting one hour is a classic presentation of acute MI. THIS IS A MEDICAL EMERGENCY. The skin rash may be incidental or could represent a separate concurrent condition such as an allergic reaction affecting the cardiovascular system (anaphylaxis)."
+        },
+        {
+          "name": "Anaphylaxis with cardiac involvement",
+          "likelihood": "serious",
+          "description": "Anaphylaxis can cause urticarial rash, chest pain, and shortness of breath simultaneously. The rash and cardiac symptoms occurring together raises this possibility. Also a medical emergency."
+        },
+        {
+          "name": "Unstable Angina",
+          "likelihood": "serious",
+          "description": "Severe chest pain radiating to the left arm with dyspnea may represent unstable angina, a life-threatening condition requiring immediate evaluation."
+        },
+        {
+          "name": "Aortic Dissection",
+          "likelihood": "serious",
+          "description": "Crushing chest pain can be a presentation of aortic dissection, which is immediately life-threatening."
+        },
+        {
+          "name": "Pulmonary Embolism",
+          "likelihood": "serious",
+          "description": "Chest pain and shortness of breath can indicate a pulmonary embolism, especially if accompanied by other risk factors."
+        },
+        {
+          "name": "Urticaria / Allergic Reaction (rash only)",
+          "likelihood": "common",
+          "description": "The visible rash pattern is consistent with urticaria or a viral exanthem, but this does NOT explain the cardiac symptoms described."
+        }
+      ],
+      "red_flags": [
+        "\u26a0\ufe0f STOP \u2014 Call 911 (or your local emergency number) IMMEDIATELY. Do NOT wait for a doctor's appointment.",
+        "Crushing chest pain lasting over one hour is a cardiac emergency",
+        "Left arm radiation of chest pain is a classic heart attack warning sign",
+        "Shortness of breath combined with chest pain requires emergency evaluation",
+        "If rash and chest/breathing symptoms are concurrent, anaphylaxis must be ruled out emergently",
+        "Do not drive yourself \u2014 call emergency services now"
+      ],
+      "questions_to_prepare_for": [
+        "When exactly did the chest pain start and has it changed in intensity?",
+        "Do you have a history of heart disease, high blood pressure, or high cholesterol?",
+        "Did you take any new medications, foods, or have any known allergen exposures before symptoms started?",
+        "Do you have any other symptoms such as nausea, sweating, dizziness, or palpitations?",
+        "Have you had this rash before, and when did it appear relative to the chest pain?",
+        "Do you smoke, and what is your family history of heart disease?"
+      ]
+    },
+    "text_only": {
+      "systems": [
+        "cardiovascular",
+        "respiratory",
+        "musculoskeletal",
+        "neurological"
+      ],
+      "possible_causes": [
+        {
+          "name": "Acute Myocardial Infarction (Heart Attack)",
+          "likelihood": "serious",
+          "description": "Blockage of coronary artery causing heart muscle damage. Classic presentation includes crushing chest pain radiating to left arm with shortness of breath."
+        },
+        {
+          "name": "Unstable Angina",
+          "likelihood": "serious",
+          "description": "Severe reduction in blood flow to the heart without complete blockage. Symptoms mirror a heart attack and require urgent evaluation."
+        },
+        {
+          "name": "Aortic Dissection",
+          "likelihood": "rare",
+          "description": "Tearing of the aorta's inner layer, causing severe chest pain that can radiate to the arm. A life-threatening emergency."
+        },
+        {
+          "name": "Pulmonary Embolism",
+          "likelihood": "serious",
+          "description": "Blood clot in the lungs causing chest pain and shortness of breath. Can present similarly to cardiac events."
+        },
+        {
+          "name": "Musculoskeletal Chest Pain",
+          "likelihood": "less_common",
+          "description": "Costochondritis or muscle strain causing chest pain. However, radiation to the left arm makes this less likely."
+        },
+        {
+          "name": "Severe GERD or Esophageal Spasm",
+          "likelihood": "less_common",
+          "description": "Esophageal conditions can mimic cardiac pain but rarely cause left arm radiation or significant shortness of breath."
+        }
+      ],
+      "red_flags": [
+        "Crushing or pressure-like chest pain lasting more than a few minutes \u2014 call 911 immediately",
+        "Pain radiating to the left arm, jaw, neck, or back",
+        "Shortness of breath accompanying chest pain",
+        "Sweating, nausea, or lightheadedness alongside chest pain",
+        "Symptoms persisting for one hour without relief",
+        "Any loss of consciousness or near-fainting"
+      ],
+      "questions_to_prepare_for": [
+        "When exactly did the pain start and has it been constant or come and go?",
+        "On a scale of 1\u201310, how severe is the pain, and has it changed in intensity?",
+        "Do you have a history of heart disease, high blood pressure, high cholesterol, or diabetes?",
+        "Are you experiencing any sweating, nausea, dizziness, or palpitations?",
+        "Do you smoke, and what medications are you currently taking?",
+        "Have you had episodes like this before, and if so, were you given a diagnosis?"
+      ]
+    }
+  }
+]

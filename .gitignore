@@ -1,4 +1,4 @@
-# Secrets — never commit
+# Secrets
 .env
 
 # Python
@@ -20,5 +20,15 @@ Thumbs.db
 outputs/
 data/uploads/
 
-# Local test images (curated demo set comes later)
+# Local scratch images
 test_images/
+
+# Eval run outputs
+eval/results/
+
+# Eval images stay local
+eval/cases/*.jpg
+eval/cases/*.jpeg
+eval/cases/*.png
+eval/cases/*.webp
+eval/cases/*.gif

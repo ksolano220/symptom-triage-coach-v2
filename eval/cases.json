@@ -1,0 +1,23 @@
+[
+  {
+    "id": "derm-consistent",
+    "image": "cases/contact_dermatitis.jpg",
+    "symptom": "Itchy red rash on my forearm. Started two days ago after gardening without gloves.",
+    "expected_systems": ["dermatological"],
+    "notes": "image and text agree"
+  },
+  {
+    "id": "derm-vague",
+    "image": "cases/contact_dermatitis.jpg",
+    "symptom": "Something is wrong with my arm. It looks bad.",
+    "expected_systems": ["dermatological"],
+    "notes": "vague text, tests image grounding"
+  },
+  {
+    "id": "derm-conflict",
+    "image": "cases/contact_dermatitis.jpg",
+    "symptom": "Crushing chest pain radiating down my left arm with shortness of breath for the last hour.",
+    "expected_systems": ["dermatological", "cardiovascular"],
+    "notes": "text describes cardiac emergency, image shows rash"
+  }
+]
