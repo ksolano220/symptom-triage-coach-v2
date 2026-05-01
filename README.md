@@ -1,5 +1,7 @@
 ## Symptom Triage Coach v2 (Multi-modal)
 
+Live demo: https://symptom-triage-coach-v2.streamlit.app/
+
 Pre-visit prep assistant. Takes an image of the affected area plus a plain-language symptom description, returns a structured triage JSON: image-grounded visual findings, body systems involved, ranked possible causes, red flags, and questions the doctor will likely ask.
 
 This is the multi-modal extension of [`symptom-triage-coach`](https://github.com/ksolano220/symptom-triage-coach). v1 was a LoRA fine-tune of Qwen2.5-1.5B for text-only triage. v2 keeps the same output schema and adds an image input via Claude's vision API.
